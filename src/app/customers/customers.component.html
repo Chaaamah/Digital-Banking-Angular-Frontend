@@ -22,6 +22,7 @@
             <th>#</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Actions</th>
           </tr>
           </thead>
 
@@ -31,10 +32,13 @@
             <td>{{c.name}}</td>
             <td>{{c.email}}</td>
             <td>
+              <button (click)="handleCustomerAccounts(c)" class="btn btn-success me-2">
+                Accounts List
+              </button>
+
               <button (click)="handleDeleteCustomer(c)" class="btn btn-danger">
                 <i class="bi bi-trash"></i>
               </button>
-"
             </td>
           </tr>
           </tbody>
